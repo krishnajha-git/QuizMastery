@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style4.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}");
+        }
+    </style>
+</head>
+<body>
+    <div class="create-quiz-container">
+        <h1>Edit Quiz Details</h1>
+    <!-- Form for editing quiz details -->
+    <form id="editQuizForm" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            <label for="quizTitle">Title:</label>
+            <input type="text" id="quizTitle" name="title_quiz" value="{{ quiz.title_quiz }}" required>
+        </div>
+        <div>
+            <label for="quizDescription">Description:</label>
+            <textarea id="quizDescription" name="description_quiz" required>{{ quiz.description_quiz }}</textarea>
+        </div>
+        <div>
+            <label for="quizImage">Current Image:</label><br>
+            <img src="{{ quiz.quiz_img.url }}" alt="{{ quiz.title_quiz }}" height="100px" style="border: 2px solid #0f2573; border-radius: 5px;">
+        </div>
+        <div>
+            <label for="quizImage">Upload New Image:</label>
+            <input type="file" id="quizImage" name="quiz_img" accept="image/*">
+        </div>
+        <!-- Submit and Exit Buttons -->
+        <div class="submit-exit-buttons">
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="button-submit">
+                Save Changes
+            </button>
+        </div>
+    </form>
+    <div class="submit-exit-buttons">
+        <a href="{% url 'quiz-check' quiz_id %}"><button>Exit</button></a>
+    </div> 
+    </div> 
+</body>
+</html>

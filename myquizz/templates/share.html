@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style7.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="share-box">
+            <label for="quiz-url">Share this quiz:</label>
+            <input 
+                type="text" 
+                id="quiz-url" 
+                value="http://127.0.0.1:8000/attend-quiz/{{ quiz_id }}/" 
+                readonly>
+            <button onclick="copyUrl()">Copy URL</button>
+        </div>
+        <button class="exit-btn" onclick="exitQuiz()">Back</button>
+    </div>
+    <script src="{% static 'Script/share.js' %}"></script>
+    
+</body>
+</html>

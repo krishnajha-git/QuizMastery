@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+          }
+          .p4{
+            color: white;
+            text-align: center;
+          }
+    </style>
+</head>
+<body>
+    <!-- Search bar -->
+    <div id="div-container">
+        <div class="div-search">
+            <form method="GET" action="">
+                <div>
+                    <input 
+                        type="text" 
+                        name="search" 
+                        id="search" 
+                        placeholder="Enter quiz title here" 
+                        value="{{ request.GET.search|default:'' }}" 
+                        class="value"
+                    >
+                    <button type="submit" class="sidebar-button-b2">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="div-sort"> 
+            <form method="GET" action="">
+                <select name="condition" class="value" onchange="updateOrderAndSubmit(this)">
+                    <option value="" disabled selected hidden>Sort By</option>
+                    <option value="username" {% if request.GET.condition == "username" %}selected{% endif %}>Name</option>
+                    <option value="quesion" {% if request.GET.condition == "quesion" %}selected{% endif %}>No. of Question</option>
+                    <option value="score" {% if request.GET.condition == "score" and request.GET.order == "asc" %}selected{% endif %}>Score (ASC)</option>
+                    <option value="score" {% if request.GET.condition == "score" and request.GET.order == "desc" %}selected{% endif %}>Score (DESC)</option>
+                </select>
+                <input type="hidden" name="order" id="order-field" value="{{ request.GET.order|default:'asc' }}">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <br>
+            <a href=""><button class="sidebar-button active">Home</button></a>
+            <br><br>
+            <a href="{% url 'login' %}"><button class="sidebar-button">My Quizzes</button></a>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <!-- Sort dropdown -->
+            
+
+            <!-- Quiz grid -->
+            <section class="quiz-grid">
+                {% if quizzes %}
+                    {% for quiz in quizzes %}
+                        <div class="quiz-card">
+                            <a href="{% url 'attend-quiz' quiz.quiz_id %}">
+                                <img src="{{ quiz.quiz_img.url }}" alt="{{ quiz.title_quiz }}" height="200px" style="padding: inherit; margin:auto; width: 200px;">
+                            </a>
+                            <h3>Title: {{ quiz.title_quiz }}</h3>
+                            <p>Total Questions: {{ quiz.total_questions }}</p>
+                            <p>Total Marks: {{ quiz.total_marks }}</p>
+                            <p>Created By: {{ quiz.created_by }}</p>
+                            <div class="quiz-info">
+                                <a href="{% url 'share' quiz.quiz_id %}"><button class="share-button" onclick="window.location.href='share.html'">Share</button></a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="p4">No Quiz available</p>
+                {% endif %}
+            </section>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                {% if quizzes.has_previous %}
+                    <a href="?page=1&search={{ request.GET.search }}&condition={{ request.GET.condition }}&order={{ request.GET.order }}">«</a>
+                    <a href="?page={{ quizzes.previous_page_number }}&search={{ request.GET.search }}&condition={{ request.GET.condition }}&order={{ request.GET.order }}">Prev</a>
+                {% endif %}
+
+                <!-- Show page numbers -->
+                {% for i in quizzes.paginator.page_range %}
+                    {% if quizzes.number == i %}
+                        <a href="?page={{ i }}&search={{ request.GET.search }}&condition={{ request.GET.condition }}&order={{ request.GET.order }}" class="active">{{ i }}</a>
+                    {% else %}
+                        <a href="?page={{ i }}&search={{ request.GET.search }}&condition={{ request.GET.condition }}&order={{ request.GET.order }}">{{ i }}</a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if quizzes.has_next %}
+                    <a href="?page={{ quizzes.next_page_number }}&search={{ request.GET.search }}&condition={{ request.GET.condition }}&order={{ request.GET.order }}">Next</a>
+                    <a href="?page={{ quizzes.paginator.num_pages }}&search={{ request.GET.search }}&condition={{ request.GET.condition }}&order={{ request.GET.order }}">»</a>
+                {% endif %}
+            </div>
+        </main>
+        <a href="{% url 'login' %}" class="create-quiz-button">Create Quiz</a>
+    </div>
+
+    <script src="{% static 'Script/start.js' %}"></script>
+</body>
+</html>
+

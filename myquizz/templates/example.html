@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+        }
+        .error-message {
+            color: red;
+            font-size: small;
+            display: none;
+        }
+        .question-container {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .add-remove-buttons {
+            margin-bottom: 20px;
+        }
+        .add-question {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .add-question button {
+            background-color: #0f2573;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .answer-section {
+            display: none;
+            margin-top: 10px;
+        }
+        .correct-answer {
+            color: green;
+        }
+        .remove-button {
+            background-color: #0f2573;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 10px auto 0; /* center-align the button */
+        }
+        .button-green {
+            background-color: green;
+            color: white;
+            border: 1px solid black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .button-green:hover {
+            background-color: darkgreen;
+        }
+        .multi-select{
+            height: 35px;
+            border-radius: 10px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #e0e0e0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tabs a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .tabs a.active {
+            border-bottom: 2px solid black;
+        }
+        .question-options {
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .question-options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .points {
+            text-align: right;
+            margin-top: -30px;
+        }
+
+        /* Buttons for editing and deleting */
+        .edit-delete-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .edit-delete-buttons button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .correct-answer {
+            background-color: lightgreen !important;
+            font-weight: bold;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+          }
+          
+          .flex-container > div {
+            text-align: center;
+            line-height: 75px;
+          }
+          #main {
+            display: flex;
+            align-items: center;
+          }
+          
+          #main div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+          }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="create-quiz-container">
+        <h1>Edit Question</h1>
+        <!-- Form for quiz details -->
+        <form id="editQuizForm" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <!-- Question Section -->
+        <div>
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question" value="{{ question.question }}" required>
+        </div>
+        <p>Current Answer: {{ question.correct_option }}</p>
+        <!-- Option 1 -->
+        <!-- Hidden Field to store Correct Option -->
+        <input type="hidden" id="hiddenCorrectOption" name="correct_option" value="{{ question.correct_option }}">
+        <!-- Option 1 -->
+        <div>
+            <label for="option1">Option 1:</label>
+            <!-- Option 1 -->
+            <input 
+                type="text" 
+                id="option1" 
+                name="option1" 
+                value="{{ question.option1 }}" 
+                oninput="updateOption('option1', 'option1Text')"
+                required
+            >
+        </div>
+
+        <!-- Option 2 -->
+        <div>
+            <label for="option2">Option 2:</label>
+            <!-- Option 2 -->
+
+            <input 
+                type="text" 
+                id="option2" 
+                name="option2" 
+                value="{{ question.option2 }}" 
+                oninput="updateOption('option2', 'option2Text')"
+                required
+            >
+        </div>
+
+        <!-- Option 3 -->
+        <div>
+            <label for="option3">Option 3:</label>
+            <!-- Option 3 -->
+
+            <input 
+                type="text" 
+                id="option3" 
+                name="option3" 
+                value="{{ question.option3 }}" 
+                oninput="updateOption('option3', 'option3Text')"
+                required
+            >
+        </div>
+
+        <!-- Points -->
+        <div>
+            <label for="points">Points:</label>
+            <input 
+                type="number" 
+                id="points" 
+                name="points" 
+                value="{{ question.points }}" 
+                required
+            >
+        </div>
+
+        <hr width="100%" color="green" size="5px" />
+        <p>Answer:</p> <br>
+        <!-- Option 1 -->
+        <label for="option1">Option 1:</label>
+        <div id="main">
+            <div>
+                <input type="radio" name="correct_option_radio" value="{{ question.option1 }}" {% if question.correct_option == question.option1 %}checked{% endif %}>
+            </div>
+            <div>
+                <p id="option1Text">{{ question.option1 }}</p>
+            </div>
+        </div>
+
+        <!-- Option 2 -->
+        <label for="option2">Option 2:</label>
+         <div id="main">
+            <div>
+                <input type="radio" name="correct_option_radio" value="{{ question.option2 }}" {% if question.correct_option == question.option2 %}checked{% endif %}>
+            </div>
+            <div>
+                <p id="option2Text">{{ question.option2 }}</p>
+            </div>
+        </div>
+        
+        <!-- Option 3 -->
+        <label for="option3">Option 3:</label>
+        <div id="main">
+            <div>
+                <input type="radio" name="correct_option_radio" value="{{ question.option3 }}" {% if question.correct_option == question.option3 %}checked{% endif %}>
+            </div>
+            <div>
+                <p id="option3Text">{{ question.option3 }}</p>
+            </div>
+        </div>
+        
+
+        <!-- Submit and Exit Buttons -->
+        <div class="submit-exit-buttons">
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="button-submit">
+                Save Changes
+            </button>
+            <button type="button" onclick="exitQuiz()">Exit</button>
+        </div>
+</form>
+        <script>
+            function updateOption(inputId, outputId) {
+                const inputValue = document.getElementById(inputId).value;
+                document.getElementById(outputId).textContent = inputValue;
+            }
+            
+
+        </script>
+
+</body>
+</html>

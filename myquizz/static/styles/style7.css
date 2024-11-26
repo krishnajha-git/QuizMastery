@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("{% static 'image/1.1.jpg' %}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.exit-btn {
+  background-color: #0F2573;
+  border-color: #ffffff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.tabs a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.tabs a.active {
+  border-bottom: 2px solid black;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.search-bar .share-box input {
+  flex-grow: 2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #797373;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-bar .share-box input:focus {
+  border-color: #888; /* Slight color change on focus */
+}
+.search-bar button {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.search-bar button img {
+  width: 20px;
+}
+
+/* Table Styling */
+.response-table {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.response-table table {
+  width: 50%;
+  border-collapse: collapse;
+  background-color: #e0e0e0;
+  text-align: center;
+  border: 1px solid black;
+}
+.response-table table thead {
+  background-color: #032b54;
+  color: #ffffff;
+}
+.response-table table th,
+.response-table table td {
+  padding: 15px;
+  border: 1px solid black;
+}
+.response-table table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Exit Button */
+.exit-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.exit-button button {
+  background-color: #0f2573;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.exit-button button:hover {
+  background-color: #0f2573;
+}
+
+/* Share Box */
+.share-box {
+  background-color: #ffffff; /* White background for better contrast */
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Extra space at the bottom */
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.share-box label {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.share-box input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #ebe7e7;
+}
+.share-box button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+.share-box button:hover {
+  background-color: #0a4b8a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+  .tabs a {
+    margin: 0 10px;
+  }
+  .search-bar input {
+    width: 200px;
+  }
+  .response-table table {
+    width: 90%;
+  }
+  .share-box {
+    width: 90%;
+  }
+  th,
+  td {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .tabs {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .tabs a {
+    margin: 5px 0;
+  }
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-bar input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .search-bar button {
+    width: 90%;
+  }
+  .response-table table {
+    width: 100%;
+    font-size: 14px;
+  }
+  .response-table table th,
+  .response-table table td {
+    padding: 8px;
+  }
+  .share-box {
+    padding: 25px;
+  }
+  .share-box input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .share-box button {
+    width: 100%;
+  }
+  .exit-button button {
+    width: 90%;
+    padding: 8px;
+  }
+}/*# sourceMappingURL=style7.css.map */

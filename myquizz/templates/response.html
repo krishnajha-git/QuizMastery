@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Responses</title>
+    <link rel="stylesheet" href="{% static 'styles/style6.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+        }
+    </style>
+</head>
+<body>
+    <!-- Tabs for "Questions" and "Responses" -->
+    <div class="tabs">
+        <a href="{% url 'quiz-check' quiz_id %}">Questions</a>
+        <a href="{% url 'response' quiz_id %}" class="active">Responses</a>
+    </div>
+
+    <!-- Display Quiz Name -->
+    <h3>Quiz Name: {{ quiz_name }}</h3>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <form method="GET" action="">
+            <div>
+                <input 
+                    type="text" 
+                    name="search" 
+                    id="search" 
+                    placeholder="Enter name here" 
+                    value="{{ request.GET.search|default:'' }}" 
+                    class="value"
+                >
+                <button type="submit" class="sidebar-button-b2">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Table for User Responses -->
+    <div class="response-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Participant</th>
+                    <th>Email</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for response in responses %}
+                    <tr>
+                        <td>{{ response.name }}</td>
+                        <td>{{ response.email }}</td>
+                        <td>
+                            <a href="{% url 'question-answer' quiz_id=quiz_id name=response.name email=response.email %}">
+                                {{ response.total_score }}
+                            </a>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="3">No responses found for this quiz.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Exit Button -->
+    <div class="exit-button">
+        <a href="{% url 'quiz-check' quiz_id %}"><button>Back</button></a>
+    </div>
+</body>    
+</html>

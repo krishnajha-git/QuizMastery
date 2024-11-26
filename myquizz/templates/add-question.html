@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style4.css' %}">
+    <style>
+        
+            body {
+                background-image: url("{% static 'image/1.1.jpg' %}"); 
+              }
+        
+    </style>
+</head>
+<body>
+    <div class="create-quiz-container">
+        <h1>Add Questions:</h1>
+        <p>{{ quiz.title_quiz }}</p>
+
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form id="addquestionForm" action="{% url 'add-question' quiz_id=quiz_id %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="quiz_id" value="{{ quiz_id }}" id="quiz_id">
+
+        <div id="questionsList"></div> <!-- Dynamic list of questions -->
+
+        <div class="add-remove-buttons">
+            <button type="button" onclick="addQuestion()">+</button>
+        </div>
+
+        <div class="submit-exit-buttons">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <div class="submit-exit-buttons">
+        <a href="{% url 'quiz-check' quiz_id %}"><button>Exit</button></a>
+    </div> 
+    </div>   
+
+    <script src="{% static 'Script/create-quiz.js' %}"></script>
+</body>
+</html>

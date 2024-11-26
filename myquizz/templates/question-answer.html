@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Responses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles/style5.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <a href="{% url 'quiz-check' quiz_id %}">Questions</a>
+        <a href="{% url 'response' quiz_id %}" class="active">Responses</a>
+    </div>
+    <br><br>
+    <h5>Participant: {{ name }}</h5>
+    <p>Email: {{ email }}</p>
+    <p>Total Score: {{ total_score }}</p>
+    <div class="table-responsive" id="no-more-tables">
+        <table class="table bg-white">
+            <thead class="bg-light text-light">
+                <tr>
+                    <th>Question</th>
+                    <th>User Answer</th>
+                    <th>Correct Answer</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in question_data %}
+                <tr>
+                    <td data-title="Question">{{ data.question }}</td>
+                    <td data-title="User Answer">{{ data.user_answer }}</td>
+                    <td data-title="Correct Answer">{{ data.correct_answer }}</td>
+                    <td data-title="Score">{{ data.points }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Exit Button -->
+    <div class="exit-button">
+        <a href="{% url 'response' quiz_id %}"><button>Back</button></a>
+    </div>
+</body>
+</html>

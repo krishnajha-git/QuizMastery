@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMastery</title>
+    <link rel="stylesheet" href="{% static 'styles/style8.css' %}">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>QuizMastery</h1>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="landing-content">
+        <div class="content-wrapper">
+            <div class="text-section">
+                <h2>Welcome to QuizMastery</h2>
+                <p>Master the quizzes, challenge yourself, and compete with the best!</p>
+                <a href="{% url 'quiz-list' %}" class="get-started-btn">Get Started</a>
+            </div>
+            <div class="image-section">
+                <img src="{% static 'image/1.2.png' %}" alt="QuizMastery Illustration">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QuizMastery. All rights reserved.</p>
+    </footer>
+</body>
+</html>

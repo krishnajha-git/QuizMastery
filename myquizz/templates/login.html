@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'styles/style1.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            <input type="email" name="email" placeholder="Email" required value="{{ form.email.value }}">
+            <div class="error-message" id="emailError" style="color: red;"></div>
+            {% if form.email.errors %}
+                <div class="error-message" style="color: red;">
+                    {% for error in form.email.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="error-message" id="passwordError" style="color: red;"></div>
+            {% if form.password.errors %}
+                <div class="error-message" style="color: red;">
+                    {% for error in form.password.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+    </div>
+    <script src="{% static 'Script/login.js' %}"></script>
+</body>
+</html>

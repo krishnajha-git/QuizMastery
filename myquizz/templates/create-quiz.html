@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style4.css' %}">
+    <style>
+        
+            body {
+                background-image: url("{% static 'image/1.1.jpg' %}"); 
+              }
+        
+    </style>
+</head>
+<body>
+    <div class="create-quiz-container">
+        <h2>Create Quiz</h2>
+        <p></p>
+        {% if creator_id %}
+                <p>Hello there, {{ name }}</p>  <!-- Display the creator's name -->
+            {% else %}
+                <p>No Creator ID found. Please log in again.</p>
+            {% endif %}
+        <form id="quizForm" action="{% url 'create-quiz' %}?creator_id={{ creator_id }}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" id="title_quiz" name="title_quiz" placeholder="Quiz Title" maxlength="200" required oninput="validateTitle(this)">
+            <div class="error-message" id="titleError">
+                {% if error %} 
+                    Title cannot be empty or exceed 200 characters. 
+                {% endif %}
+            </div>
+
+            <textarea id="description_quiz" name="description_quiz" placeholder="Quiz Description" maxlength="1000" rows="3" required oninput="validateDescription(this)"></textarea>
+            <div class="error-message" id="descriptionError">
+                {% if error %} 
+                    Description cannot be empty or exceed 1000 characters. 
+                {% endif %}
+            </div>
+
+            <input type="hidden" name="created_by" value="{{ name }}" id="created_by">
+            <input type="hidden" name="creator_id" value="{{ creator_id }}" id="creator_id">
+
+            <!-- Image input with validation -->
+            <div id="div1-div1">
+                <label for="quiz_img">Image</label><br>
+                <input type="file" id="quiz_img" name="quiz_img" accept="image/*" onchange="validateFile()"required>
+                <div class="error-message" id="fileError" style="color: red; display: none;">
+                    {% if error %} 
+                        Please upload a valid image file (jpg, jpeg, png, gif).
+                    {% endif %}
+                </div>
+            </div>
+
+            <div id="questionsList"></div> <!-- All questions will be added here dynamically -->
+
+            <div class="add-remove-buttons">
+                <button type="button" onclick="addQuestion()">+</button>
+            </div>
+            <div class="submit-exit-buttons">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="submit-exit-buttons">
+            <a href="{% url 'quiz-list' %}"><button>Exit</button></a>
+        </div>  
+    </div>  
+
+    <script src="{% static 'Script/create-quiz.js' %}"></script>
+</body>
+</html>

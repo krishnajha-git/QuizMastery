@@ -1,0 +1,231 @@
+body {
+    background-image: url("{% static 'image/1.1.jpg' %}");
+    font-family: Arial, sans-serif;
+}
+
+/* Basic structure and styling */
+.edit-quiz-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .quiz{
+        padding: 10px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+}
+
+/* Header Tabs for "Questions" and "Responses" */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+
+    .tab-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+
+            &.active {
+                border-bottom: 2px solid black;
+            }
+        }
+    }
+}
+
+/* Buttons */
+.edit-quiz-btn .add-buttons,
+.share-btn button {
+    background-color:#4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Share Button alignment */
+.share-btn {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* Title and Input Fields */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Question Section */
+.question-section {
+    margin-top: 20px;
+
+    p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .question-options {
+        padding: 10px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 17px;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+    }
+
+    .points {
+        text-align: right;
+        margin-top: -30px;
+        font-size: 12px;
+    }
+}
+
+/* Add Question Button */
+.add-question {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    a {
+        background-color: #0f2573;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Buttons for editing and deleting */
+.edit-delete-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+    button, .edit-question {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+/* Exit Buttons */
+.exit-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+        width: 10%;
+        padding: 10px;
+        background-color: #0f2573;
+        color: white;
+        border-color: #f1f1f1;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* Adjustments for smaller screens (iPhone: max-width 380px) */
+@media (max-width: 380px) {
+    .tabs .tab-links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .edit-quiz-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .question-options label {
+        font-size: 13px !important;
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: stretch;
+
+        .tab-links a {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+    }
+
+    .question-options {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .add-question a {
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .exit-buttons button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .button1 {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

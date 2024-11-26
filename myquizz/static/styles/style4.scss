@@ -1,0 +1,136 @@
+body {
+    background-image: url("{% static 'image/1.1.jpg' %}");
+}
+#main {
+    display: flex;
+    align-items: center;
+  }
+  
+  #main div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+
+.error-message {
+    color: red;
+    font-size: small;
+    display: none;
+}
+
+.question-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.add-remove-buttons {
+    margin-bottom: 20px;
+}
+
+.add-question {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    button {
+        background-color: #0f2573;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.answer-section {
+    display: none;
+    margin-top: 10px;
+}
+
+.correct-answer {
+    color: green;
+    background-color: lightgreen !important;
+    font-weight: bold;
+}
+
+.remove-button {
+    background-color: #0f2573;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto 0; // center-align the button
+}
+
+.button-green {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darkgreen;
+    }
+}
+
+.multi-select {
+    height: 35px;
+    border-radius: 10px;
+}
+
+// Responsive styling for iPhone SE (380px width)
+@media (max-width: 380px) {
+    body {
+        background-size: cover; // Ensure the background adjusts to fit smaller screens
+    }
+
+    .question-container {
+        margin-bottom: 15px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .options {
+        margin-top: 8px;
+    }
+
+    .add-question button {
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+
+    .remove-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 8px auto;
+    }
+
+    .button-green {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .multi-select {
+        height: 30px;
+        font-size: 14px;
+    }
+}

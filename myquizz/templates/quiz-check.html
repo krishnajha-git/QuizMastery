@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style6.css' %}">
+    <style>
+        
+        body {
+            background-image: url("{% static 'image/1.1.jpg' %}"); 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab-links">
+            <a href="" class="active">Questions</a>
+            <a href="{% url 'response' quiz.quiz_id %}">Responses</a>
+        </div>
+        <!-- Share Button -->
+        <div class="share-btn">
+            <a href="{% url 'share' quiz.quiz_id %}"><button class="share-button" onclick="window.location.href='share.html'">Share</button></a>
+        </div>
+        
+    </div>
+    
+    <div class="edit-quiz-container">
+        <div class="quiz">
+            <img src="{{ quiz.quiz_img.url }}" alt="{{ quiz.title_quiz }}" height="200px" style="padding: inherit; margin:auto; width: 200px; display: block; border: 5px solid #0f2573; border-radius: 10px;">
+            <!-- Quiz Title -->
+            <h1><strong>{{ quiz.title_quiz }}</strong></h1>
+            <!-- Quiz Description -->
+            <h2>{{ quiz.description_quiz }}</h2>
+            <div class="exit-button">
+                <a href="{% url 'edit-quizdetail' quiz.quiz_id %}" >
+                    <button type="button" class="save-question" class="edit-question">Edit</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Total Marks -->
+        <div class="total-marks">
+            <strong>Total Marks:</strong> {{ total_marks }}
+        </div>
+        {% for question in questions %}
+        <div class="question-section">
+            <!-- Question -->
+            <h4><strong>Q: {{ question.question }}</strong></h4>
+            <!-- Options -->
+             <p>Options:</p>
+            <div class="question-options">
+                <label>1. {{ question.option1 }}</label>
+                <label>2. {{ question.option2 }}</label>
+                <label>3. {{ question.option3 }}</label>
+
+            </div><br>
+            <!-- Points -->
+            <div class="points"><b>{{ question.points }} Point{% if question.points > 1 %}s{% endif %}</b></div>
+            <p class="p1">Correct Answer: {{ question.correct_option }}</p>
+        </div>
+        <div class="edit-delete-buttons">
+            <!-- Edit Button -->
+            <a href="{% url 'edit-question' question.question_id %}">
+                <button type="button" class="save-question">Edit</button>
+            </a>
+            <!-- Delete button form -->
+            <form method="post" action="{% url 'delete-question' %}" class="delete-form">
+                {% csrf_token %}
+                <input type="hidden" name="question_id" value="{{ question.question_id }}">
+                <!-- Delete button -->
+                <button type="button" class="delete-question" onclick="confirmDelete1(this)">Delete</button>
+            </form>
+        </div>
+        {% endfor %}
+
+        <div class="exit-button">
+            <a href="{% url 'add-question' quiz.quiz_id %}" class="sidebar-button-b2"><button type="button">Add Quesion(s)</button></a>
+        </div>
+    </div>
+    <!-- Exit Buttons -->
+    <div class="exit-button">
+        <a href="{% url 'myquiz' %}"><button class="button1">Exit</button></a>
+    </div>
+    
+    <script src="{% static 'Script/start.js' %}"></script>
+</body>
+</html>

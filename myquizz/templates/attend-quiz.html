@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attend Quiz</title>
+    <link rel="stylesheet" href="{% static 'styles/style2.css' %}">
+    <style>
+        
+        
+            body {
+                background-image: url("{% static 'image/1.1.jpg' %}"); 
+              }
+        
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        {% if user_exists %}
+        <div class="user-exists-warning" style="background-color: red; color: white; padding: 10px; margin-bottom: 10px;">
+            <h2>Already Responded !!</h2>
+        </div>
+        {% endif %}
+    
+        {% if total_marks == 0 %}
+        <div class="total-marks" style="background-color: lightgreen; padding: 10px; margin-bottom: 10px;">
+            <h2>Total Marks: 0</h2>
+        </div>
+        {% elif total_marks %}
+        <div class="total-marks" style="background-color: lightgreen; padding: 10px; margin-bottom: 10px;">
+            <h2>Total Marks: {{ total_marks }}</h2>
+        </div>
+        {% endif %}
+    
+        <h1>{{ quiz.title_quiz }}</h1>
+        <h3>{{ quiz.description_quiz }}</h3>
+    
+        <form method="post" action="{% url 'attend-quiz' quiz_id=quiz_id %}">
+            {% csrf_token %}
+    
+            <!-- Participant Details -->
+            <div>
+                <input type="text" id="name" name="name" placeholder="Your Name" required oninput="validateName(this)">
+                <div class="error-message" id="nameError">Name is required and must be valid.</div>
+            </div>
+    
+            <div>
+                <input type="email" id="email" name="email" placeholder="Your Email" required oninput="validateEmail(this)">
+                <div class="error-message" id="emailError">Enter a valid email address.</div>
+            </div>
+    
+            <h2>Questions:</h2>
+            {% for question in questions %}
+            <div>
+                <div class="question-section 
+                    {% if question.is_correct %} correct 
+                    {% elif question.is_correct == False %} incorrect 
+                    {% endif %}">
+    
+                    <h4><strong>Q{{ forloop.counter }}: {{ question.question }}</strong></h4>
+                    <div class="question-options">
+                        <!-- Hidden Input to Pass Question ID -->
+                        <input type="hidden" name="question_id_{{ question.question_id }}" value="{{ question.question_id }}">
+    
+                        <!-- Radio Buttons for Options -->
+                        <label>
+                            <input type="radio" name="q{{ question.question_id }}" value="{{ question.option1 }}" required> {{ question.option1 }}
+                        </label>
+                        <label>
+                            <input type="radio" name="q{{ question.question_id }}" value="{{ question.option2 }}" required> {{ question.option2 }}
+                        </label>
+                        <label>
+                            <input type="radio" name="q{{ question.question_id }}" value="{{ question.option3 }}" required> {{ question.option3 }}
+                        </label>
+                    </div>
+                    <!-- Points Display -->
+                    <div class="points">Point: {{ question.points }}</div>
+                </div>
+            </div>
+            {% endfor %}
+    
+            <!-- Submit and Exit Buttons -->
+            <div class="submit-exit-buttons">
+                <button>Submit</button>
+            </form>
+            </div>
+            <div class="submit-exit-buttons">
+                <a href="{% url 'quiz-list' %}"><button>Exit</button></a>
+            </div>        
+    </div>
+
+    <script src="{% static 'Script/attend-quiz.js' %}"></script>
+</body>
+</html>

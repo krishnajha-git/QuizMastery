@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+  font-family: inherit !important;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.quiz-container #name,
+.quiz-container #email {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #b3e5fc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.quiz-container #name:focus,
+.quiz-container #email:focus {
+  border-color: #0f2573;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.tabs .tab-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tabs .tab-links a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.tabs .tab-links a.active {
+  border-bottom: 2px solid black;
+}
+
+.edit-quiz-btn {
+  margin-top: 10px;
+}
+.edit-quiz-btn button {
+  background-color: #0f2573;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-quiz-btn button:hover {
+  background-color: #09325b;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.heading-container h2 {
+  font-size: 24px;
+  margin: 0;
+}
+.heading-container .share-btn button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.heading-container .share-btn button:hover {
+  background-color: #3a8d3c;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.question-section {
+  margin-top: 20px;
+}
+.question-section.correct {
+  background-color: lightgreen;
+}
+.question-section.incorrect {
+  background-color: lightcoral;
+}
+.question-section h4 strong {
+  font-size: 16px;
+}
+.question-section .question-options {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.question-section .question-options label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.question-section .question-options label input {
+  margin-right: 10px;
+}
+.question-section .points {
+  text-align: right;
+  margin-top: -30px;
+  font-size: 15px;
+}
+
+.add-question {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.add-question button {
+  background-color: #0f2573;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+.add-question button:hover {
+  background-color: #09325b;
+}
+
+.submit-exit-buttons {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.submit-exit-buttons button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0f2573;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-exit-buttons button:hover {
+  background-color: #09325b;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+  display: none;
+  margin-top: 5px;
+}
+
+@media (max-width: 391px) {
+  .quiz-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  #name, #email {
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  .tabs {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 0;
+  }
+  .tab-links {
+    flex-direction: column;
+  }
+  .tab-links a {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .edit-quiz-btn button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  .heading-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  h1, h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .question-section {
+    margin-top: 15px;
+  }
+  .question-section h4 {
+    font-size: 16px;
+  }
+  .question-options {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  .question-options label {
+    font-size: 12px !important;
+    margin-bottom: 5px;
+  }
+  .points {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 5px !important;
+  }
+  .add-question button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .submit-exit-buttons {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .submit-exit-buttons button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .user-exists-warning,
+  .total-marks {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style2.css.map */

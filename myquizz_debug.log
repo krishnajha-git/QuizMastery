@@ -1,0 +1,623 @@
+INFO 2024-11-19 12:48:18,804 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:48:44,745 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 12:48:47,171 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:49:07,245 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:49:10,888 basehttp "GET / HTTP/1.1" 200 5746
+INFO 2024-11-19 12:49:12,842 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 12:49:12,932 basehttp "GET /quiz/profile/database_1.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 12:49:12,933 basehttp "GET /quiz/profile/image_17.png HTTP/1.1" 304 0
+INFO 2024-11-19 12:49:12,975 basehttp "GET /quiz/profile/none_NaZNKes.png HTTP/1.1" 304 0
+INFO 2024-11-19 12:49:12,949 basehttp "GET /quiz/profile/Polish_20241103_183132158.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 12:49:12,971 basehttp "GET /quiz/profile/image_16.png HTTP/1.1" 304 0
+INFO 2024-11-19 12:49:12,967 basehttp "GET /quiz/profile/image_13.png HTTP/1.1" 304 0
+INFO 2024-11-19 12:49:16,164 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 13:02:25,723 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 13:02:29,210 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:02:54,237 autoreload D:\Project\myenv\myquiz\myquizz\forms.py changed, reloading.
+INFO 2024-11-19 13:02:56,095 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:03:07,730 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:03:09,922 basehttp "GET / HTTP/1.1" 200 5746
+INFO 2024-11-19 13:03:13,276 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 13:03:13,362 basehttp "GET /quiz/profile/Polish_20241103_183132158.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 13:03:13,367 basehttp "GET /quiz/profile/database_1.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 13:03:13,373 basehttp "GET /quiz/profile/image_17.png HTTP/1.1" 304 0
+INFO 2024-11-19 13:03:13,384 basehttp "GET /quiz/profile/image_16.png HTTP/1.1" 304 0
+INFO 2024-11-19 13:03:13,391 basehttp "GET /quiz/profile/image_13.png HTTP/1.1" 304 0
+INFO 2024-11-19 13:03:13,433 basehttp "GET /quiz/profile/none_NaZNKes.png HTTP/1.1" 304 0
+INFO 2024-11-19 13:03:16,728 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:01:51,693 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 17:01:57,190 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:02:19,596 autoreload D:\Project\myenv\myquiz\myquizz\forms.py changed, reloading.
+INFO 2024-11-19 17:02:21,275 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:02:29,117 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:02:32,121 basehttp "GET / HTTP/1.1" 200 5746
+WARNING 2024-11-19 17:02:32,419 log Not Found: /favicon.ico
+WARNING 2024-11-19 17:02:32,421 basehttp "GET /favicon.ico HTTP/1.1" 404 5019
+INFO 2024-11-19 17:02:33,943 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 17:02:34,642 basehttp "GET /quiz/profile/image_13.png HTTP/1.1" 200 4024
+INFO 2024-11-19 17:02:34,671 basehttp "GET /quiz/profile/image_16.png HTTP/1.1" 200 2143
+INFO 2024-11-19 17:02:34,680 basehttp "GET /quiz/profile/image_17.png HTTP/1.1" 200 4299
+INFO 2024-11-19 17:02:34,695 basehttp "GET /quiz/profile/database_1.jpg HTTP/1.1" 200 229078
+INFO 2024-11-19 17:02:34,697 basehttp "GET /quiz/profile/none_NaZNKes.png HTTP/1.1" 200 1605
+INFO 2024-11-19 17:02:34,752 basehttp "GET /quiz/profile/Polish_20241103_183132158.jpg HTTP/1.1" 200 740500
+INFO 2024-11-19 17:02:37,280 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:05:14,037 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 17:05:16,240 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:05:21,267 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:36,915 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:37,866 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:38,032 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:38,192 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:38,330 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:38,626 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:31:38,847 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6536
+INFO 2024-11-19 17:41:52,123 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 17:41:54,220 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:42:34,416 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6325
+INFO 2024-11-19 17:45:32,416 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6395
+INFO 2024-11-19 17:45:33,708 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6395
+INFO 2024-11-19 18:03:55,973 basehttp "GET / HTTP/1.1" 200 5746
+INFO 2024-11-19 18:03:57,710 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 18:03:57,892 basehttp "GET /quiz/profile/Polish_20241103_183132158.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 18:03:57,893 basehttp "GET /quiz/profile/database_1.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 18:03:57,907 basehttp "GET /quiz/profile/image_17.png HTTP/1.1" 304 0
+INFO 2024-11-19 18:03:57,909 basehttp "GET /quiz/profile/none_NaZNKes.png HTTP/1.1" 304 0
+INFO 2024-11-19 18:03:57,925 basehttp "GET /quiz/profile/image_13.png HTTP/1.1" 304 0
+INFO 2024-11-19 18:03:57,926 basehttp "GET /quiz/profile/image_16.png HTTP/1.1" 304 0
+INFO 2024-11-19 18:04:01,702 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6395
+INFO 2024-11-19 18:07:59,777 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:08:02,802 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:09:07,179 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:09:09,824 basehttp "GET / HTTP/1.1" 200 5746
+INFO 2024-11-19 18:09:11,568 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 18:09:15,173 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6412
+INFO 2024-11-19 18:11:30,970 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6492
+INFO 2024-11-19 18:11:32,404 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6492
+INFO 2024-11-19 18:11:32,650 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6492
+INFO 2024-11-19 18:11:33,316 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6492
+INFO 2024-11-19 18:15:22,099 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6421
+INFO 2024-11-19 18:15:22,766 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6421
+INFO 2024-11-19 18:34:56,748 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6472
+INFO 2024-11-19 18:35:51,411 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:35:54,139 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 18:36:30,537 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 143, in get
+    quiz = get_object_or_404(QuizDetails1, id=quiz_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: created_by, creator, creator_id, description_quiz, quiz_id, quiz_img, quizdetails2, response1, title_quiz
+ERROR 2024-11-19 18:36:30,562 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 127393
+INFO 2024-11-19 18:37:18,855 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:37:21,136 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 18:37:24,335 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 143, in get
+    quiz = get_object_or_404(QuizDetails1, id=quiz_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: created_by, creator, creator_id, description_quiz, quiz_id, quiz_img, quizdetails2, response1, title_quiz
+ERROR 2024-11-19 18:37:24,363 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 127393
+INFO 2024-11-19 18:39:59,373 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:40:01,168 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:41:13,073 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:41:15,394 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 18:41:17,007 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 143, in get
+    quiz = get_object_or_404(QuizDetails1, id=quiz_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: created_by, creator, creator_id, description_quiz, quiz_id, quiz_img, quizdetails2, response1, title_quiz
+ERROR 2024-11-19 18:41:17,044 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 127393
+INFO 2024-11-19 18:42:57,365 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:42:59,532 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:43:42,015 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:43:44,689 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 18:43:45,767 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend_quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: attend_quiz.html
+ERROR 2024-11-19 18:43:45,791 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 93881
+INFO 2024-11-19 18:44:00,958 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 18:44:03,326 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:44:04,169 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 19:07:26,082 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 19:07:31,085 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 19:07:31,435 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 19:07:31,753 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 19:07:32,204 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 23:13:42,251 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:13:44,857 basehttp "GET / HTTP/1.1" 200 5746
+INFO 2024-11-19 23:13:46,401 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 23:13:46,456 basehttp "GET /quiz/profile/Polish_20241103_183132158.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 23:13:46,459 basehttp "GET /quiz/profile/database_1.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 23:13:46,469 basehttp "GET /quiz/profile/image_17.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:13:46,473 basehttp "GET /quiz/profile/image_13.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:13:46,475 basehttp "GET /quiz/profile/image_16.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:13:46,476 basehttp "GET /quiz/profile/none_NaZNKes.png HTTP/1.1" 304 0
+ERROR 2024-11-19 23:13:49,297 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend_quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: attend_quiz.html
+ERROR 2024-11-19 23:13:49,306 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 93843
+INFO 2024-11-19 23:14:08,046 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:14:09,054 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 23:14:12,687 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend-quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'attend_quiz' with keyword arguments '{'quiz_id': ''}' not found. 1 pattern(s) tried: ['attend\\-quiz/(?P<quiz_id>[0-9]+)/\\Z']
+ERROR 2024-11-19 23:14:12,702 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 133618
+ERROR 2024-11-19 23:14:42,327 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend-quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'attend_quiz' with keyword arguments '{'quiz_id': ''}' not found. 1 pattern(s) tried: ['attend\\-quiz/(?P<quiz_id>[0-9]+)/\\Z']
+ERROR 2024-11-19 23:14:42,333 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 133481
+INFO 2024-11-19 23:15:52,375 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:15:53,333 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 23:15:56,454 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend-quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'attend_quiz' with keyword arguments '{'quiz_id': ''}' not found. 1 pattern(s) tried: ['attend\\-quiz/(?P<quiz_id>[0-9]+)/\\Z']
+ERROR 2024-11-19 23:15:56,466 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 133618
+INFO 2024-11-19 23:18:45,024 autoreload D:\Project\myenv\myquiz\myquizz\urls.py changed, reloading.
+INFO 2024-11-19 23:18:46,111 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 23:18:49,534 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend-quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'attend_quiz' with keyword arguments '{'quiz_id': ''}' not found. 1 pattern(s) tried: ['attend\\-quiz/(?P<quiz_id>[0-9]+)/\\Z']
+ERROR 2024-11-19 23:18:49,544 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 133618
+INFO 2024-11-19 23:19:15,488 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:19:16,490 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 23:19:19,669 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend-quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'attend_quiz' with keyword arguments '{'quiz_id': ''}' not found. 1 pattern(s) tried: ['attend\\-quiz/(?P<quiz_id>[0-9]+)/\\Z']
+ERROR 2024-11-19 23:19:19,686 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 133618
+INFO 2024-11-19 23:20:12,690 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:20:13,694 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-19 23:20:17,444 log Internal Server Error: /attend-quiz/8/
+Traceback (most recent call last):
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\myquiz\myquizz\views.py", line 147, in get
+    return render(request, 'attend_quiz.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Project\myenv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: attend_quiz.html
+ERROR 2024-11-19 23:20:17,450 basehttp "GET /attend-quiz/8/ HTTP/1.1" 500 94079
+INFO 2024-11-19 23:20:32,076 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:20:33,057 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:20:33,972 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 23:28:49,175 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:30:16,747 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:30:17,407 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:30:22,390 basehttp "GET / HTTP/1.1" 200 5746
+INFO 2024-11-19 23:30:24,043 basehttp "GET /quizz/ HTTP/1.1" 200 7426
+INFO 2024-11-19 23:30:24,096 basehttp "GET /quiz/profile/Polish_20241103_183132158.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 23:30:24,099 basehttp "GET /quiz/profile/image_17.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:30:24,101 basehttp "GET /quiz/profile/database_1.jpg HTTP/1.1" 304 0
+INFO 2024-11-19 23:30:24,106 basehttp "GET /quiz/profile/image_16.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:30:24,106 basehttp "GET /quiz/profile/image_13.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:30:24,112 basehttp "GET /quiz/profile/none_NaZNKes.png HTTP/1.1" 304 0
+INFO 2024-11-19 23:30:29,101 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 23:34:17,166 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:34:18,240 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:34:21,411 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 23:36:12,192 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:36:13,179 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:36:15,123 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 23:37:03,522 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-19 23:37:04,237 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 23:37:06,670 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6474
+INFO 2024-11-19 23:41:24,908 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6502
+INFO 2024-11-19 23:41:26,779 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6502
+INFO 2024-11-19 23:42:49,178 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6506
+INFO 2024-11-19 23:44:23,933 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6421
+INFO 2024-11-19 23:44:26,326 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6421
+INFO 2024-11-19 23:46:12,569 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6473
+INFO 2024-11-19 23:47:50,715 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6596
+INFO 2024-11-19 23:51:29,477 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6363
+INFO 2024-11-19 23:53:33,644 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6365
+INFO 2024-11-19 23:57:57,185 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6365
+INFO 2024-11-19 23:59:03,901 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6367
+INFO 2024-11-20 00:03:11,260 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-20 00:03:12,557 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 00:09:08,485 basehttp "GET /static/image/1.1.jpg HTTP/1.1" 304 0
+INFO 2024-11-20 00:09:25,311 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6367
+INFO 2024-11-20 00:09:48,760 autoreload D:\Project\myenv\myquiz\myquizz\views.py changed, reloading.
+INFO 2024-11-20 00:09:49,728 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 00:10:24,176 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6402
+INFO 2024-11-20 00:11:17,297 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6420
+INFO 2024-11-20 00:12:26,791 basehttp "GET /attend-quiz/8/ HTTP/1.1" 200 6405
+INFO 2024-11-20 00:15:43,495 autoreload D:\Project\myenv\myquiz\myquiz\settings.py changed, reloading.
